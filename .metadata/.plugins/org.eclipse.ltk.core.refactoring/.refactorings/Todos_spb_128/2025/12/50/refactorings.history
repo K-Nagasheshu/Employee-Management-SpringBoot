@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;Todos_spb_128/src/main/resources/META-INF/resources/WEB-INF/jsp/Sai.jsp&apos; to &apos;Hello.jsp&apos;" description="Rename resource &apos;Sai.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/META-INF/resources/WEB-INF/jsp/Sai.jsp" name="Hello.jsp" stamp="1765525707534" updateReferences="true"/>
-</session>
