@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;Todos_spb_142-Practice&apos; to &apos;Todos_spb_142-Practice-ComBean&apos;&#x0D;&#x0A;- Original element: &apos;Todos_spb_142-Practice&apos;&#x0D;&#x0A;- Renamed element: &apos;Todos_spb_142-Practice&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;Todos_spb_142-Practice&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=Todos_spb_142-Practice" name="Todos_spb_142-Practice-ComBean" references="true" stamp="1769965475934" version="1.0"/>
+</session>

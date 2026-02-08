@@ -1,0 +1,21 @@
+package com.course.www.Todos_spb_142.todos;
+
+
+import org.springframework.stereotype.Service;
+
+import com.course.www.Todos_spb_434.todos.Student; 
+
+@Service
+public class Serv {
+
+    public void applyLeave(Student serv) { 
+
+        // Business logic (example)
+        System.out.println("Leave Applied:");
+        System.out.println("Name: " + serv.getName());
+        System.out.println("Days: " + serv.getEmpid());   
+        System.out.println("Days: " + serv.getDays());
+        System.out.println("Days: " + serv.getLeave());
+        
+    }
+}

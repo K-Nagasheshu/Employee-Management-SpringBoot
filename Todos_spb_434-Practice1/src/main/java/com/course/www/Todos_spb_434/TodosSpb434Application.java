@@ -1,0 +1,13 @@
+package com.course.www.Todos_spb_434;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class TodosSpb434Application {
+
+	public static void main(String[] args) {
+		SpringApplication.run(TodosSpb434Application.class, args);
+	}
+
+}

@@ -1,0 +1,6 @@
+insert into course (id, name, class)
+values(1, 'sumanth', 'ten');
+values(2, 'laxmi', 'nine');
+
+delete * from course where id=1
+

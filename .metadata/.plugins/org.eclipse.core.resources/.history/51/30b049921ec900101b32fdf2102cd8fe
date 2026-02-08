@@ -1,0 +1,20 @@
+package com.course.www.Jsp_119_sb.login;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+
+
+@org.springframework.stereotype.Controller
+public class Control {
+	
+    // http://localhost:8085/login
+	
+	@RequestMapping("login") 
+	public String Htmlmethodjsp() {
+	     return "Login";
+ 
+	}
+
+
+}
+ 
+

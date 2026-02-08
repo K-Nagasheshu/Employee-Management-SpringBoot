@@ -1,0 +1,56 @@
+package com.course.www.Todos_spb_139.todos;
+
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+
+@Controller
+public class Controll {
+	
+	private Serv serv;
+
+	// http://localhost:8085/Mahi
+	public Controll(Serv serv) {
+		super();
+		this.serv = serv;
+	}
+	
+	// http://localhost:8085/Mahi //
+	
+	   // OPEN FORM //
+	    @RequestMapping(value="Mahi", method=RequestMethod.GET)
+		public String showform(ModelMap model) {      // Because this controller method is returning a view name, and a view name is always a String.
+			model.addAttribute("student",new Student());
+			return "Hai";
+	    }
+	    
+	    // add employee  //
+	    @RequestMapping(value="Mahi", method=RequestMethod.GET)
+		public String addemployee(ModelMap model) {      // Because this controller method is returning a view name, and a view name is always a String.
+			model.addAttribute("student",new Student());
+			return "Hai";
+	    }
+	    
+	    
+	    // Submit form // 
+	    @RequestMapping(value="Mahi", method=RequestMethod.POST)
+	    public String submitLeave(@ModelAttribute("student") Student student, ModelMap model) {
+	        // call service
+	    	 List<Student> list = serv.findAll();   
+	        model.addAttribute("leaves", list);
+	        
+	        return "Hello"; 
+	    }
+}
+	   
+
+
+
+
+	
+

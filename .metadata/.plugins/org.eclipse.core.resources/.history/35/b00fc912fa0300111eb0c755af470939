@@ -1,0 +1,46 @@
+package com.course.www.Todos_spb_434.todos;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import jakarta.validation.Valid;
+
+@Controller
+public class Control {
+
+    private Serv serv;
+
+    public Control(Serv serv) {
+        this.serv = serv;
+    }
+
+    
+    // Open form
+    
+ // http://localhost:8085/Mani
+    @RequestMapping(value="Mani", method=RequestMethod.GET)
+    public String showLeaveForm(Model model) {
+        model.addAttribute("student", new Student());
+        return "Aaa";
+    }
+
+    // Submit form
+    @RequestMapping(value="Mani", method=RequestMethod.POST)
+    public String submitLeave(@ModelAttribute("student") @Valid Student student,Model model, BindingResult result) {
+        // call service
+    	
+    	if (result.hasErrors()) {
+    		return "Aaa";
+    	}
+    	
+        serv.applyLeave(student);
+        model.addAttribute("leaves", List<Student>);
+        return "First"; 
+    }
+}
+
+
